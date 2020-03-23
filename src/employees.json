@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Sally Dullus",
+    "image": "https://cdn.pixabay.com/photo/2015/01/12/10/44/portrait-597173_960_720.jpg",
+    "occupation": "Accountant",
+    "phone": "111-2222", 
+    "email": "sdullus123@gmail.com",
+    "location": "Building Q Office 17"
+  },
+  {
+    "id": 2,
+    "name": "Johnathan Medic",
+    "image": "https://cdn.pixabay.com/photo/2015/03/03/20/42/man-657869_960_720.jpg",
+    "occupation": "Network Engineer",
+    "phone": "333-2222", 
+    "email": "jmedic123@gmail.com",
+    "location": "Building P Office 23"
+  },
+  {
+    "id": 3,
+    "name": "Collin Fitzhenry",
+    "image": "https://cdn.pixabay.com/photo/2015/09/18/11/46/man-945482_960_720.jpg",
+    "occupation": "Mail Router",
+    "phone": "333-4444", 
+    "email": "cfitzhenry123@gmail.com",
+    "location": "Building R Office 18"
+  },
+  {
+    "id": 4,
+    "name": "Dexter Simone",
+    "image": "https://cdn.pixabay.com/photo/2017/06/26/02/47/people-2442565_960_720.jpg",
+    "occupation": "Accountant",
+    "phone": "333-5555", 
+    "email": "dsimone123@gmail.com",
+    "location": "Building S Office 32"
+  },
+  {
+    "id": 5,
+    "name": "Ophilia Braddish",
+    "image": "https://cdn.pixabay.com/photo/2015/03/04/19/41/woman-659348_960_720.jpg",
+    "occupation": "Functions Coordinator",
+    "phone": "222-9999", 
+    "email": "obraddish123@gmail.com",
+    "location": "Building A Office 13"
+  },
+  {
+    "id": 6,
+    "name": "Patricia O'Savin",
+    "image": "https://cdn.pixabay.com/photo/2016/01/20/22/04/portrait-1152472_960_720.jpg",
+    "occupation": "Accountant",
+    "phone": "444-2222", 
+    "email": "posavin123@gmail.com",
+    "location": "Building W Office 7"
+  },
+  {
+    "id": 7,
+    "name": "Dolf Lungren",
+    "image": "https://cdn.pixabay.com/photo/2015/01/16/15/01/man-601560_960_720.jpg",
+    "occupation": "Biochemist",
+    "phone": "222-5555", 
+    "email": "dlungren123@gmail.com",
+    "location": "Building R Office 22"
+  },
+  {
+    "id": 8,
+    "name": "Nate Drake",
+    "image": "https://cdn.pixabay.com/photo/2017/03/24/18/59/face-2171923_960_720.jpg",
+    "occupation": "Biochemist",
+    "phone": "111-3333", 
+    "email": "ndrake123@gmail.com",
+    "location": "Building E Office 10"
+  }
+  
+]
