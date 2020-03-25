@@ -14,15 +14,32 @@ class App extends Component {
   removeEmployee = id => {
     
     const employees = this.state.employees.filter(employee => employee.id !== id);
-  
+    console.log("Test");
     this.setState({ employees });
   };
   searchName = name => {
+
+    const temp = [];
+
+    for(var i=0;i<this.state.employees.length;i++){
+      temp.push(this.state.employees[i].name);
+    }
     
-    const employee = this.state.employees.sort();
-    console.log(employee);
+    const employee = temp.sort();
+    const employees = [];
+    for(let i=0;i<this.state.employees.length;i++){
+      for(let j=0;j<employee.length;j++)
+      {
+        console.log(this.state.employees[j].name);
+        if(employee[i]===this.state.employees[j].name){
+            employees.push(this.state.employees[j]);
+        }
+      }
+      
+    }
+    console.log(employees);
    
-    this.setState({ employee });
+    this.setState({ employees });
   };
   sortEmployeeByOccupation = occupation => {
     
