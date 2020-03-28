@@ -3,6 +3,7 @@ import EmployeeCard from "./components/EmployeeCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import Button from "./components/Button";
+import ButtonOccupation from "./components/ButtonOccupation";
 import employees from "./employees.json";
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
     console.log("Test");
     this.setState({ employees });
   };
+
   searchName = name => {
 
     const temp = [];
@@ -41,19 +43,56 @@ class App extends Component {
    
     this.setState({ employees });
   };
+
   sortEmployeeByOccupation = occupation => {
+
+    const temp = [];
+
+    for(var i=0;i<this.state.employees.length;i++){
+      temp.push(this.state.employees[i].occupation);
+    }
     
-    const employees = this.state.employees.filter(employee => employee.occupation);
-    
+    const employee = temp.sort();
+    const employees = [];
+    for(let i=0;i<this.state.employees.length;i++){
+      for(let j=0;j<employee.length;j++)
+      {
+        console.log(this.state.employees[j].occupation);
+        if(employee[i]===this.state.employees[j].occupation){
+            employees.push(this.state.employees[j]);
+        }
+      }
+      
+    }
+    console.log(employees);
+   
     this.setState({ employees });
   };
+
   sortEmployeeByLocation = location => {
-    
-    const employees = this.state.employees.filter(employee => employee.location);
 
+    const temp = [];
+
+    for(var i=0;i<this.state.employees.length;i++){
+      temp.push(this.state.employees[i].location);
+    }
+    
+    const employee = temp.sort();
+    const employees = [];
+    for(let i=0;i<this.state.employees.length;i++){
+      for(let j=0;j<employee.length;j++)
+      {
+        console.log(this.state.employees[j].location);
+        if(employee[i]===this.state.employees[j].location){
+            employees.push(this.state.employees[j]);
+        }
+      }
+      
+    }
+    console.log(employees);
+   
     this.setState({ employees });
   };
-
 
 
   // Map over this.state.friends and render a FriendCard component for each friend object
@@ -61,7 +100,10 @@ class App extends Component {
     return (
       
       <Wrapper> 
-        <Button searchName={this.searchName}></Button> 
+        <Button searchName={this.searchName}></Button>
+        <ButtonOccupation sortEmployeeByOccupation={this.sortEmployeeByOccupation}></ButtonOccupation>
+        {/* <Button sortEmployeeByOccupation={this.sortEmployeeByOccupation}></Button>
+        <Button sortEmployeeByLocation={this.sortEmployeeByLocation}></Button> */}
         <Title>Employee List</Title>
         
         {this.state.employees.sort(this.state.employees.name).map(employee => (
