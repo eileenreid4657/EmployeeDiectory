@@ -103,7 +103,7 @@ class App extends Component {
       <Wrapper> 
         <ButtonName searchName={this.searchName}></ButtonName>
         <ButtonOccupation sortEmployeeByOccupation={this.sortEmployeeByOccupation}></ButtonOccupation>
-        <ButtonLocation sortEmployeeByLocation={this.sortEmployeeByLocation}></ButtonLocation> }
+        <ButtonLocation sortEmployeeByLocation={this.sortEmployeeByLocation}></ButtonLocation> 
         <Title>Employee List</Title>
         
         {this.state.employees.sort(this.state.employees.name).map(employee => (
