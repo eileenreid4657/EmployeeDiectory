@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import EmployeeCard from "./components/EmployeeCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import Button from "./components/Button";
+import ButtonName from "./components/ButtonName";
 import ButtonOccupation from "./components/ButtonOccupation";
+import ButtonLocation from "./components/ButtonLocation";
 import employees from "./employees.json";
 
 class App extends Component {
@@ -100,10 +101,9 @@ class App extends Component {
     return (
       
       <Wrapper> 
-        <Button searchName={this.searchName}></Button>
+        <ButtonName searchName={this.searchName}></ButtonName>
         <ButtonOccupation sortEmployeeByOccupation={this.sortEmployeeByOccupation}></ButtonOccupation>
-        {/* <Button sortEmployeeByOccupation={this.sortEmployeeByOccupation}></Button>
-        <Button sortEmployeeByLocation={this.sortEmployeeByLocation}></Button> */}
+        <ButtonLocation sortEmployeeByLocation={this.sortEmployeeByLocation}></ButtonLocation> }
         <Title>Employee List</Title>
         
         {this.state.employees.sort(this.state.employees.name).map(employee => (
@@ -118,10 +118,10 @@ class App extends Component {
             email = {employee.email}
             location={employee.location}
           />
-        ))}
+        ))};
       </Wrapper>
     );
-  }
+  };
 }
 
 export default App;
